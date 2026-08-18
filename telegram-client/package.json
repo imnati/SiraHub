@@ -1,0 +1,23 @@
+{
+  "name": "@sirahub/telegram-client",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SiraHub Telegram Bot — communicates with the SiraHub backend API",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "axios": "1.7.9",
+    "dotenv": "16.4.7",
+    "grammy": "1.32.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.13.1",
+    "ts-node-dev": "2.0.0",
+    "typescript": "5.7.3"
+  }
+}
