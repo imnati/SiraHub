@@ -1,12 +1,37 @@
 /**
  * Central model export.
- * Models are defined in their own files and re-exported here.
- * Implemented progressively across phases:
- *   Phase 2: User, Company, Category, Skill
- *   Phase 4: Job
- *   Phase 6: Application, SavedJob
- *   Phase 8: Notification, Message
+ * All 10 Mongoose models for the SiraHub platform.
+ *
+ * Import individual models from their own files when you need the Document type.
+ * Import from here when you just need the model for queries.
  */
 
-// Placeholder — models added in Phase 2+
-export {};
+export { default as User } from './User';
+export type { IUserDocument } from './User';
+
+export { default as Company } from './Company';
+export type { ICompanyDocument } from './Company';
+
+export { default as Job } from './Job';
+export type { IJobDocument } from './Job';
+
+export { default as Application } from './Application';
+export type { IApplicationDocument } from './Application';
+
+export { default as Category } from './Category';
+export type { ICategoryDocument } from './Category';
+
+export { default as Skill } from './Skill';
+export type { ISkillDocument } from './Skill';
+
+export { default as Notification } from './Notification';
+export type { INotificationDocument } from './Notification';
+
+export { default as SavedJob } from './SavedJob';
+export type { ISavedJobDocument } from './SavedJob';
+
+export { default as Review } from './Review';
+export type { IReviewDocument } from './Review';
+
+export { default as Message } from './Message';
+export type { IMessageDocument } from './Message';
